@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>URL Shortener</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Enter a URL to shorten:</h1>
-  <form method="post">
-    <input type="text" name="url" placeholder="https://example.com" required>
-    <button type="submit">Shorten</button>
-  </form>
+  <div class="container">
+    <h1><span class="logo">🔗</span> Minimal URL Shortener</h1>
+    <form method="post">
+      <input type="text" name="url" placeholder="Paste your long URL here..." required>
+      <button type="submit">Shorten</button>
+    </form>
+  </div>
 </body>
 </html>
+
 

@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>Your Short Link</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h2>Here’s your short link:</h2>
-  <p><a href="/{{ short_id }}">localhost:5000/{{ short_id }}</a></p>
+  <div class="container">
+    <h2>✅ Your Short Link:</h2>
+    <p><a class="short-link" href="/{{ short_id }}">localhost:5000/{{ short_id }}</a></p>
 
-  <p><a href="/">Shorten another link</a></p> <!-- This is the 'Back' link -->
+    <a href="/" class="back-link">⟵ Shorten another</a>
+  </div>
 </body>
 </html>
-
